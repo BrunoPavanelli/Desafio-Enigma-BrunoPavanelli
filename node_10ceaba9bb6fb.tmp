@@ -1,0 +1,18 @@
+// Enigma
+function contaPalavras(texto) {
+    if (texto.length <= 250) {
+        let criaPalavras = ''
+        let criaListaPalavras = []
+        let letters = /[a-z]+/
+        for (let i = 0; i < texto.length; i++) {
+            while (texto[i].match(letters)) {
+                criaPalavras += texto[i]
+                console.log(criaPalavras)
+            }
+        }
+    } else {
+        return 'Texto inválido'
+    }
+}
+txt = 'asdfG'
+contaPalavras(txt)
